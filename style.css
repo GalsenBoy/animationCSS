@@ -27,11 +27,129 @@ body {
           animation: animation-1 1.2s alternate infinite ease-in-out;
 }
 .container .anim-2 {
-  bottom: 0;
+  background-color: brown;
   -webkit-animation: animation-2 1.2s alternate infinite ease-in-out;
           animation: animation-2 1.2s alternate infinite ease-in-out;
 }
+.container .anim-3 {
+  background-color: rgb(96, 96, 195);
+  -webkit-animation: animation-3 2s infinite ease-in-out;
+          animation: animation-3 2s infinite ease-in-out;
+}
+.container .anim-4 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: animation-4 2s infinite ease-in-out;
+          animation: animation-4 2s infinite ease-in-out;
+}
 
+@-webkit-keyframes animation-4 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 156px;
+    top: 0;
+    background-color: rgb(96, 96, 195);
+  }
+  50% {
+    left: 156px;
+    top: 156px;
+    background-color: brown;
+  }
+  75% {
+    left: 0;
+    top: 156px;
+    background-color: rgb(96, 96, 195);
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes animation-4 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 156px;
+    top: 0;
+    background-color: rgb(96, 96, 195);
+  }
+  50% {
+    left: 156px;
+    top: 156px;
+    background-color: brown;
+  }
+  75% {
+    left: 0;
+    top: 156px;
+    background-color: rgb(96, 96, 195);
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+@-webkit-keyframes animation-3 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 156px;
+    top: 0;
+  }
+  50% {
+    left: 0;
+    top: 156px;
+  }
+  75% {
+    left: 156px;
+    top: 156px;
+  }
+}
+@keyframes animation-3 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 156px;
+    top: 0;
+  }
+  50% {
+    left: 0;
+    top: 156px;
+  }
+  75% {
+    left: 156px;
+    top: 156px;
+  }
+}
+@-webkit-keyframes animation-2 {
+  0% {
+    left: 0;
+    top: 156px;
+  }
+  100% {
+    left: 156px;
+    top: 0;
+  }
+}
+@keyframes animation-2 {
+  0% {
+    left: 0;
+    top: 156px;
+  }
+  100% {
+    left: 156px;
+    top: 0;
+  }
+}
 @-webkit-keyframes animation-1 {
   0% {
     top: 0;
@@ -43,7 +161,6 @@ body {
     top: 156px;
   }
 }
-
 @keyframes animation-1 {
   0% {
     top: 0;
@@ -53,23 +170,5 @@ body {
   }
   100% {
     top: 156px;
-  }
-}
-@-webkit-keyframes animation-2 {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    top: 0px;
-    left: 156px;
-  }
-}
-@keyframes animation-2 {
-  0% {
-    bottom: 0;
-  }
-  100% {
-    top: 0px;
-    left: 156px;
   }
 }/*# sourceMappingURL=style.css.map */
