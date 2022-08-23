@@ -5,7 +5,10 @@
 }
 
 body {
-  background-color: rgb(31, 30, 30);
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -13,8 +16,8 @@ body {
   width: 200px;
   height: 200px;
   position: relative;
+  margin-bottom: 3rem;
 }
-
 .container .circle {
   position: absolute;
   width: 40px;
@@ -22,186 +25,194 @@ body {
   background-color: rgb(174, 106, 98);
   border-radius: 50%;
 }
-
 .container .anim-1 {
   left: 80px;
   -webkit-animation: animation-1 1.2s alternate infinite ease-in-out;
-  animation: animation-1 1.2s alternate infinite ease-in-out;
+          animation: animation-1 1.2s alternate infinite ease-in-out;
 }
-
 .container .anim-2 {
   background-color: brown;
   -webkit-animation: animation-2 1.2s alternate infinite ease-in-out;
-  animation: animation-2 1.2s alternate infinite ease-in-out;
+          animation: animation-2 1.2s alternate infinite ease-in-out;
 }
-
 .container .anim-3 {
   background-color: rgb(96, 96, 195);
   -webkit-animation: animation-3 2s infinite ease-in-out;
-  animation: animation-3 2s infinite ease-in-out;
+          animation: animation-3 2s infinite ease-in-out;
 }
-
 .container .anim-4 {
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation: animation-4 2s infinite ease-in-out;
-  animation: animation-4 2s infinite ease-in-out;
+          animation: animation-4 2s infinite ease-in-out;
 }
 
+.slider {
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+.slider .slider-content {
+  position: relative;
+  height: 400px;
+  width: 2712px;
+  -webkit-animation: slider 10s infinite;
+          animation: slider 10s infinite;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes slider {
+  33% {
+    right: 904px;
+  }
+  66% {
+    right: 1804px;
+  }
+  99% {
+    right: 0px;
+  }
+}
+
+@keyframes slider {
+  33% {
+    right: 904px;
+  }
+  66% {
+    right: 1804px;
+  }
+  99% {
+    right: 0px;
+  }
+}
 @-webkit-keyframes animation-4 {
   0% {
     left: 0;
     top: 0;
   }
-
   25% {
     left: 156px;
     top: 0;
     background-color: rgb(96, 96, 195);
   }
-
   50% {
     left: 156px;
     top: 156px;
     background-color: brown;
   }
-
   75% {
     left: 0;
     top: 156px;
     background-color: rgb(96, 96, 195);
   }
-
   100% {
     left: 0;
     top: 0;
   }
 }
-
 @keyframes animation-4 {
   0% {
     left: 0;
     top: 0;
   }
-
   25% {
     left: 156px;
     top: 0;
     background-color: rgb(96, 96, 195);
   }
-
   50% {
     left: 156px;
     top: 156px;
     background-color: brown;
   }
-
   75% {
     left: 0;
     top: 156px;
     background-color: rgb(96, 96, 195);
   }
-
   100% {
     left: 0;
     top: 0;
   }
 }
-
 @-webkit-keyframes animation-3 {
   0% {
     left: 0;
     top: 0;
   }
-
   25% {
     left: 156px;
     top: 0;
   }
-
   50% {
     left: 0;
     top: 156px;
   }
-
   75% {
     left: 156px;
     top: 156px;
   }
 }
-
 @keyframes animation-3 {
   0% {
     left: 0;
     top: 0;
   }
-
   25% {
     left: 156px;
     top: 0;
   }
-
   50% {
     left: 0;
     top: 156px;
   }
-
   75% {
     left: 156px;
     top: 156px;
   }
 }
-
 @-webkit-keyframes animation-2 {
   0% {
     left: 0;
     top: 156px;
   }
-
   100% {
     left: 156px;
     top: 0;
   }
 }
-
 @keyframes animation-2 {
   0% {
     left: 0;
     top: 156px;
   }
-
   100% {
     left: 156px;
     top: 0;
   }
 }
-
 @-webkit-keyframes animation-1 {
   0% {
     top: 0;
   }
-
   50% {
     transform: rotateX(90deg);
   }
-
   100% {
     top: 156px;
   }
 }
-
 @keyframes animation-1 {
   0% {
     top: 0;
   }
-
   50% {
     transform: rotateX(90deg);
   }
-
   100% {
     top: 156px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

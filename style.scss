@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -13,6 +16,7 @@ body {
     width: 200px;
     height: 200px;
     position: relative;
+    margin-bottom: 3rem;
 
     .circle {
         position: absolute;
@@ -42,6 +46,42 @@ body {
         animation: animation-4 2s infinite ease-in-out;
     }
 }
+
+.slider {
+    width: 900px;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+
+    .slider-content {
+        position: relative;
+        height: 400px;
+        width: calc(904px * 3);
+        animation: slider 10s infinite;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes slider {
+    33% {
+        right: 904px;
+    }
+
+    66% {
+        right: 1804px;
+    }
+
+    99% {
+        right: 0px;
+    }
+}
+
+
+
+
+
+
 
 @keyframes animation-4 {
     0% {
