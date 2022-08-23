@@ -59,10 +59,6 @@ body {
   width: 2712px;
   -webkit-animation: slider 10s infinite;
           animation: slider 10s infinite;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 @-webkit-keyframes slider {
@@ -75,14 +71,17 @@ body {
   20% {
     left: -904px;
   }
-  50% {
+  40% {
     left: -904px;
   }
-  70% {
+  60% {
+    left: -1804px;
+  }
+  80% {
     left: -1804px;
   }
   90% {
-    left: -1804px;
+    left: 0;
   }
   100% {
     left: 0;
@@ -99,14 +98,17 @@ body {
   20% {
     left: -904px;
   }
-  50% {
+  40% {
     left: -904px;
   }
-  70% {
+  60% {
+    left: -1804px;
+  }
+  80% {
     left: -1804px;
   }
   90% {
-    left: -1804px;
+    left: 0;
   }
   100% {
     left: 0;

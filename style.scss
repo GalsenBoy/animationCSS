@@ -58,8 +58,6 @@ body {
         height: 400px;
         width: calc(904px * 3);
         animation: slider 10s infinite;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
     }
 }
 
@@ -76,16 +74,20 @@ body {
         left: -904px;
     }
 
-    50% {
+    40% {
         left: -904px;
     }
 
-    70% {
+    60% {
+        left: -1804px;
+    }
+
+    80% {
         left: -1804px;
     }
 
     90% {
-        left: -1804px;
+        left: 0;
     }
 
     100% {
