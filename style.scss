@@ -64,17 +64,37 @@ body {
 }
 
 @keyframes slider {
-    33% {
-        right: 904px;
+    0% {
+        left: 0;
     }
 
-    66% {
-        right: 1804px;
+    10% {
+        left: 0px;
     }
 
-    99% {
-        right: 0px;
+    20% {
+        left: -904px;
     }
+
+    50% {
+        left: -904px;
+    }
+
+    70% {
+        left: -1804px;
+    }
+
+    90% {
+        left: -1804px;
+    }
+
+    100% {
+        left: 0;
+    }
+
+
+
+
 }
 
 
