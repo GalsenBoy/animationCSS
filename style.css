@@ -80,12 +80,6 @@ body {
   80% {
     left: -1804px;
   }
-  90% {
-    left: 0;
-  }
-  100% {
-    left: 0;
-  }
 }
 
 @keyframes slider {
@@ -106,12 +100,6 @@ body {
   }
   80% {
     left: -1804px;
-  }
-  90% {
-    left: 0;
-  }
-  100% {
-    left: 0;
   }
 }
 @-webkit-keyframes animation-4 {
