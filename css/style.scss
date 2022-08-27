@@ -168,6 +168,7 @@ body {
 }
 
 .forme {
+    position: relative;
     border: 2px solid salmon;
     width: 500px;
     height: auto;
@@ -181,6 +182,7 @@ body {
         background-color: #F4BFBF;
         width: 100px;
         height: 100px;
+        animation: carre 2s linear infinite;
     }
 
     .cercle {
@@ -188,6 +190,8 @@ body {
         width: 100px;
         height: 100px;
         border-radius: 50%;
+        //animation: cercle 2s infinite;
+        transform: rotate(40deg);
     }
 
     .demi-cercle {
@@ -195,6 +199,7 @@ body {
         border-bottom: 100px solid #8CC0DE;
         border-top-right-radius: 75px;
         border-top-left-radius: 75px;
+        animation: demi 2s infinite;
     }
 
     .triangle {
@@ -202,20 +207,61 @@ body {
         border-left: 50px solid transparent;
         border-right: 50px solid transparent;
         border-bottom: 100px solid red;
-        animation: tourne 5s infinite;
+        animation: triangle 5s infinite;
     }
 
     .triangle2 {
-        width: 0;
+        width: z0;
         border-right: 100px solid transparent;
         border-bottom: 100px solid #FAF0D7;
     }
+
+    .trapeze {
+        width: 100px;
+        height: 100px;
+        border-bottom: 75px solid #9A86A4;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+
+    }
+
+    .oeuf {
+        width: 100px;
+        height: 140px;
+        background-color: aquamarine;
+        border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    }
 }
 
-@keyframes tourne {
+
+@keyframes carre {
+    0% {}
+
+
+    100% {
+        transform: rotate(1turn);
+    }
+
+}
+
+
+
+@keyframes triangle {
     0% {}
 
     100% {
         transform: rotateX(360deg);
+    }
+}
+
+@keyframes demi {
+    0% {}
+
+    50% {
+        transform: rotateY(90deg);
+    }
+
+    80% {
+        transform: rotateY(160deg);
     }
 }
